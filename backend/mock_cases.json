@@ -1,0 +1,232 @@
+[
+  {
+    "_id": "case_1781892680688",
+    "timestamp": "2026-06-19T18:11:20.688Z",
+    "userId": "Priya Patel",
+    "riskScore": 75,
+    "category": "Insider Threat",
+    "reason": "Insider threat alarm. Action: Queried VIP customer account. Status: Warning.",
+    "status": "New",
+    "details": {
+      "device": "Branch Terminal Desktop 09",
+      "location": "Delhi CP",
+      "ip": "::1"
+    }
+  },
+  {
+    "_id": "case_1781892677451",
+    "timestamp": "2026-06-19T18:11:17.451Z",
+    "userId": "Rahul Sharma",
+    "riskScore": 100,
+    "category": "KYC Fraud",
+    "reason": "KYC application flagged. Suspicious parameters detected: Duplicate identity onboarding attempt, Biometric matching confidence (38%) below threshold (70%), Onboarding routed from an anonymous cloud network proxy.",
+    "status": "New",
+    "details": {
+      "idNumber": "AAXX0029P",
+      "imageMatchScore": 38,
+      "isDuplicate": true,
+      "isHostingIp": true,
+      "location": "Delhi, IN",
+      "ip": "185.220.101.4",
+      "device": "Chrome Browser"
+    }
+  },
+  {
+    "_id": "case_1781892674761",
+    "timestamp": "2026-06-19T18:11:14.761Z",
+    "userId": "bob_customer",
+    "riskScore": 100,
+    "category": "Suspicious Recovery",
+    "reason": "Risk Score: 100/100. Contributing Factors: New Device Fingerprint Mismatch (+35), Abnormal keyboard rhythm / scroll pattern (+25), Password Reset from unrecognized device (+65). Final Decision: Block and Escalate.",
+    "status": "New",
+    "details": {
+      "device": "Corporate Terminal",
+      "location": "Mumbai, IN",
+      "ip": "192.168.1.1",
+      "transactionAmount": 0
+    }
+  },
+  {
+    "_id": "case_1781892520137",
+    "timestamp": "2026-06-19T18:08:40.137Z",
+    "userId": "bob_employee",
+    "riskScore": 100,
+    "category": "Insider Threat",
+    "reason": "Insider threat alarm. Action: Bulk database export (500 records) attempted. Status: Suspended.",
+    "status": "New",
+    "details": {
+      "device": "Branch Terminal Desktop 09",
+      "location": "Mumbai HQ",
+      "ip": "::1"
+    }
+  },
+  {
+    "_id": "case_1781892489050",
+    "timestamp": "2026-06-19T18:08:09.050Z",
+    "userId": "Priya Patel",
+    "riskScore": 100,
+    "category": "Insider Threat",
+    "reason": "Insider threat alarm. Action: Bulk database export (500 records) attempted. Status: Suspended.",
+    "status": "New",
+    "details": {
+      "device": "Branch Terminal Desktop 09",
+      "location": "Mumbai HQ",
+      "ip": "::1"
+    }
+  },
+  {
+    "_id": "case_1781892193490",
+    "timestamp": "2026-06-19T18:03:13.490Z",
+    "userId": "Priya Patel",
+    "riskScore": 75,
+    "category": "Insider Threat",
+    "reason": "Insider threat alarm. Action: Queried VIP customer account. Status: Warning.",
+    "status": "Resolved",
+    "details": {
+      "device": "Branch Terminal Desktop 09",
+      "location": "Delhi CP",
+      "ip": "::1"
+    }
+  },
+  {
+    "_id": "case_1781892191849",
+    "timestamp": "2026-06-19T18:03:11.849Z",
+    "userId": "Rahul Sharma",
+    "riskScore": 100,
+    "category": "KYC Fraud",
+    "reason": "KYC application flagged. Suspicious parameters detected: Duplicate identity onboarding attempt, Biometric matching confidence (38%) below threshold (70%), Onboarding routed from an anonymous cloud network proxy.",
+    "status": "New",
+    "details": {
+      "idNumber": "AAXX0029P",
+      "imageMatchScore": 38,
+      "isDuplicate": true,
+      "isHostingIp": true,
+      "location": "Delhi, IN",
+      "ip": "185.220.101.4",
+      "device": "Chrome Browser"
+    }
+  },
+  {
+    "_id": "case_1781892190130",
+    "timestamp": "2026-06-19T18:03:10.130Z",
+    "userId": "bob_customer",
+    "riskScore": 100,
+    "category": "Suspicious Recovery",
+    "reason": "Risk Score: 100/100. Contributing Factors: New Device Fingerprint Mismatch (+35), Abnormal keyboard rhythm / scroll pattern (+25), Password Reset from unrecognized device (+65). Final Decision: Block and Escalate.",
+    "status": "New",
+    "details": {
+      "device": "Corporate Terminal",
+      "location": "Mumbai, IN",
+      "ip": "192.168.1.1",
+      "transactionAmount": 0
+    }
+  },
+  {
+    "_id": "case_1781890238924",
+    "timestamp": "2026-06-19T17:30:38.924Z",
+    "userId": "Rahul Sharma",
+    "riskScore": 100,
+    "category": "KYC Fraud",
+    "reason": "KYC application flagged. Suspicious parameters detected: Duplicate identity onboarding attempt, Biometric matching confidence (38%) below threshold (70%), Onboarding routed from an anonymous cloud network proxy.",
+    "status": "New",
+    "details": {
+      "idNumber": "AAXX0029P",
+      "imageMatchScore": 38,
+      "isDuplicate": true,
+      "isHostingIp": true,
+      "location": "Delhi, IN",
+      "ip": "185.220.101.4",
+      "device": "Chrome Browser"
+    }
+  },
+  {
+    "_id": "case_1781890213635",
+    "timestamp": "2026-06-19T17:30:13.635Z",
+    "userId": "bob_customer",
+    "riskScore": 100,
+    "category": "Suspicious Recovery",
+    "reason": "Risk Score: 100/100. Contributing Factors: New Device Fingerprint Mismatch (+35), Abnormal keyboard rhythm / scroll pattern (+25), Password Reset from unrecognized device (+65). Final Decision: Block and Escalate.",
+    "status": "New",
+    "details": {
+      "device": "Corporate Terminal",
+      "location": "Mumbai, IN",
+      "ip": "192.168.1.1",
+      "transactionAmount": 0
+    }
+  },
+  {
+    "_id": "case_1781890001506",
+    "timestamp": "2026-06-19T17:26:41.506Z",
+    "userId": "jaimin",
+    "riskScore": 65,
+    "category": "Account Takeover",
+    "reason": "Risk Score: 65/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Invalid credential match attempt (+40), Trusted Behavioral Cadence (-10). Final Decision: Face Verification Required.",
+    "status": "New",
+    "details": {
+      "device": "Chrome Browser",
+      "location": "Mumbai, MH",
+      "ip": "192.168.1.1",
+      "transactionAmount": 0
+    }
+  },
+  {
+    "_id": "case_101",
+    "userId": "bob_customer",
+    "riskScore": 82,
+    "category": "Account Takeover",
+    "reason": "New Device + Password Reset requested from Delhi, IN. Typing cadence contains bot-like cadence anomalies.",
+    "status": "Under Review",
+    "timestamp": "2026-06-19T14:43:17.270Z",
+    "details": {
+      "device": "Apple iPhone 15",
+      "location": "Delhi, IN",
+      "ip": "103.112.43.19",
+      "transactionAmount": 0
+    }
+  },
+  {
+    "_id": "case_102",
+    "userId": "new_onboard_209",
+    "riskScore": 78,
+    "category": "Suspicious Onboarding",
+    "reason": "KYC Photo matching confidence score (38%) is below threshold (70%). Network IP matches a hosting subnet.",
+    "status": "Under Review",
+    "timestamp": "2026-06-19T11:43:17.270Z",
+    "details": {
+      "device": "Samsung SM-G998B",
+      "location": "Pune, IN",
+      "ip": "185.220.101.4",
+      "transactionAmount": 0
+    }
+  },
+  {
+    "_id": "case_103",
+    "userId": "bob_employee",
+    "riskScore": 92,
+    "category": "Insider Threat",
+    "reason": "Employee user looked up 51 VIP account profiles within a 5-minute interval outside standard business hours.",
+    "status": "Blocked",
+    "timestamp": "2026-06-18T16:43:17.270Z",
+    "details": {
+      "device": "Baroda Terminal Desktop 09",
+      "location": "Mumbai HQ Branch",
+      "ip": "192.168.42.112",
+      "lookupCount": 51
+    }
+  },
+  {
+    "_id": "case_104",
+    "userId": "bob_customer",
+    "riskScore": 68,
+    "category": "Suspicious Recovery",
+    "reason": "Multiple failed forgot-password attempts from unknown browser footprint. SMS OTP step-up verification timed out.",
+    "status": "Under Review",
+    "timestamp": "2026-06-18T10:43:17.270Z",
+    "details": {
+      "device": "Google Pixel 8",
+      "location": "Ahmedabad, IN",
+      "ip": "117.218.49.5",
+      "transactionAmount": 0
+    }
+  }
+]

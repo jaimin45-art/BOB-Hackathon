@@ -1,0 +1,47 @@
+[
+  {
+    "username": "bob_customer",
+    "passwordHash": "$2a$10$v06XrN13DuhJa65dIISRfuujkH5jhH6yL5eLmNePS5iotZ5qOPCMa",
+    "role": "customer"
+  },
+  {
+    "username": "bob_employee",
+    "passwordHash": "$2a$10$LXTBEOqaGIQo53HcvN6JdeazrBdHkQZr5IFVYyaqeUv5uAUMU0zgO",
+    "role": "employee"
+  },
+  {
+    "username": "bob_enterprise",
+    "passwordHash": "$2a$10$uC61JbHP9HmoJCI1SeQLcuRatfz2V155Xq3StGtqyRvsc8uDRvN1G",
+    "role": "enterprise"
+  },
+  {
+    "username": "bob_admin",
+    "passwordHash": "$2a$10$QRMB4hCiY6PofjNgd6EmjOJHjFqhrLrC4CT/xjgwId..8hy1x/U0e",
+    "role": "admin"
+  },
+  {
+    "username": "jaimin",
+    "passwordHash": "$2a$10$5iLgr4M3AQJfGm8AlCh8LubGgRa.d8ln/LZUlUFg35PRX9Od5f3BG",
+    "role": "customer"
+  },
+  {
+    "username": "jay",
+    "passwordHash": "$2a$10$6umwYOfeyiu5PfO1zO3KMevXd5ARGgsPLzhQWzg5BO/8vOM4zaer.",
+    "role": "employee"
+  },
+  {
+    "username": "testuser123",
+    "passwordHash": "$2a$10$cgymo4q5ft8nphsAvA0ahOG246qDPg4Zex0jXGOOFKYCv1oO.4qGq",
+    "role": "customer"
+  },
+  {
+    "username": "modi",
+    "passwordHash": "$2a$10$aBLPphlHbl2C1WzW7XHRX.2flqzcu7ejBFmmiREBq4jM3fc82TI6i",
+    "role": "customer"
+  },
+  {
+    "username": "remote",
+    "passwordHash": "$2a$10$tz12IylOy2.RPrJozWI9P.vAMvM5ttdJ2aTvDVtYB7GedwTvzJA5q",
+    "role": "employee"
+  }
+]

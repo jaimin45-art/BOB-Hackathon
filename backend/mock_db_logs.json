@@ -1,0 +1,1051 @@
+[
+  {
+    "_id": "1781892674759",
+    "timestamp": "2026-06-19T18:11:14.759Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 100,
+    "decision": "Block and Escalate",
+    "explanation": "Risk Score: 100/100. Contributing Factors: New Device Fingerprint Mismatch (+35), Abnormal keyboard rhythm / scroll pattern (+25), Password Reset from unrecognized device (+65). Final Decision: Block and Escalate.",
+    "telemetry": "f8222f99036f89aa2a56c42b8b09b198:cfc1aa0ec0b2daa1a16837c86e7795d5b7b75301975b5476bdb3285062fa804d49064e7a8df11440efbd51a7eee1c492",
+    "violations": [
+      {
+        "desc": "New Device Fingerprint Mismatch",
+        "weight": 35
+      },
+      {
+        "desc": "Abnormal keyboard rhythm / scroll pattern",
+        "weight": 25
+      },
+      {
+        "desc": "Password Reset from unrecognized device",
+        "weight": 65
+      }
+    ],
+    "context": "fc55cae77cb3afc207e2922742e120f4:1aa6ca092a4637ab26061c2f3cf457fba47d1319c9eb7e0c120cd14b1c871fda6cfa9cb843bc0df2536bc1963e953c0a2e9ccd88676fa0bc8fcaa280af64db3681ce5a1adba8375f377268c179002adb20ca7532f56fd2e72f483cb199df70c1d86a9080ffd09c27a5445f9f4fd4405c"
+  },
+  {
+    "_id": "1781892671265",
+    "timestamp": "2026-06-19T18:11:11.265Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 35,
+    "decision": "OTP Verification Required",
+    "explanation": "Risk Score: 35/100. Contributing Factors: New Device Fingerprint Mismatch (+35), Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: OTP Verification Required.",
+    "telemetry": "1a942b1daab8f9ebbd8b8a37cdd50d84:45584de324506f7fd317053784b06789e2264976dcacbb065e8629f272e07feed5f4a6a5d7712d4f6cc6fe9f36de25b6",
+    "violations": [
+      {
+        "desc": "New Device Fingerprint Mismatch",
+        "weight": 35
+      },
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "5c61584c4a65f5fb7804284c40004e11:e461f69a0f29e0dfcd8c714178aeb508fca8cb3aca57ff3c7471774f9ae22f52d2b3956363c7d759e12c95c821d138d65719bb3e612bc9a03d17e2b353293ab7606b030a586b136c32025e4b257c75573969301d03375e48718e61d1dbb7e99012ce70cccfd42a8b5385d771565fbc6f"
+  },
+  {
+    "_id": "1781892666990",
+    "timestamp": "2026-06-19T18:11:06.990Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 0,
+    "decision": "Allow Access",
+    "explanation": "Risk Score: 0/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: Allow Access.",
+    "telemetry": "6c75f94f3f99d6d7557847eae53397ab:72ae4be9ab8fac956339ace27975050d75edb104e05b2985636a157647e415b70448e16716a1996a0e05316d9e32982b",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "09c77a3759c70264a56343c887c3fd00:c2dfa376f71182529e76b4d4e0b3c4a1f057010822782d409c99fb8631064d2b00a3ebab8f4ce8a57bd4e76eaf70241f20adf156dd3b57506db20996f17a7738298219f49a909aa7653c04d2cbc0ee4dad50f9212c6810f4e62b6d6b1c73924c"
+  },
+  {
+    "_id": "1781892621495",
+    "timestamp": "2026-06-19T18:10:21.495Z",
+    "userId": "bob_admin",
+    "role": "admin",
+    "riskScore": 0,
+    "decision": "Allow Access",
+    "explanation": "Risk Score: 0/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: Allow Access.",
+    "telemetry": "957d5feb06ee0b4a66ff4acee55c6180:b1b25c7de16cd627bca6a0ae3a4fae42d17ee2bdf35da68b0242ed1921d04de1381a97b0421b629d01c1a53fef3bf067",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "d3aab2badcf07f1caacbd18e7779c5ea:2f60353e212fd376b36797b355cd089fb9a80d086e19d995632cafef94da0ac13f085a21866a8248ca969430c8f41848d5653c18b1ad5e31e03bacb5676c9b40ccae6eb42e43b5766105c37030a03eb5659afe4fe994de8ea3b5d5faa56208df"
+  },
+  {
+    "_id": "1781892556695",
+    "timestamp": "2026-06-19T18:09:16.695Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 35,
+    "decision": "OTP Verification Required",
+    "explanation": "Risk Score: 35/100. Contributing Factors: New Device Fingerprint Mismatch (+35), Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: OTP Verification Required.",
+    "telemetry": "a65a31cfe8f2c5990105a7a5cfad38b7:18efc9750323587a31ca04931a0d3dd83c42db562d342867797618be1196fbb7190611aef1f84af8f1d2b4cb52197714",
+    "violations": [
+      {
+        "desc": "New Device Fingerprint Mismatch",
+        "weight": 35
+      },
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "8e88d118e8c1a0a0ff7c0e0b5459490e:f5be1122de5d1d86c8758468a1e73c91de6ab52ef2eb7854733e6c5ea8061b8e1d80dce4d4f7810a5c0862fb5a77d47fc9ab78dfa6f4f0ba3850f16ebb24482aed021b7e30c97383fd4f2a89c828e3a1c42a244261737234972faec89c12c5276be2858cf61500e93800f354485105be"
+  },
+  {
+    "_id": "1781892431885",
+    "timestamp": "2026-06-19T18:07:11.885Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 0,
+    "decision": "Allow Access",
+    "explanation": "Risk Score: 0/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: Allow Access.",
+    "telemetry": "6021e22448aa4421e4fdae2a156917b7:35db858f883b6cde6c6e573829709e7a10a4a456fb5862e9cc57be339a356e9e6b0d873786a1877e8295f924c0b8a7d0",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "24f81f873ff6eb250b04def35883123a:170b73f7d3d6c962b4c2901291847fa16c30ca129ccbb7d81727bc11b950d56fd69b32cfc7b940f959ee4142c03905082daac0328d4f0eca512de6ac970a03e46f45ac3368f13820e6ed9bf910a4ceeb524a00d8ad63b67ef36860795115f879"
+  },
+  {
+    "_id": "1781892411095",
+    "timestamp": "2026-06-19T18:06:51.095Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 0,
+    "decision": "Allow Access",
+    "explanation": "Risk Score: 0/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: Allow Access.",
+    "telemetry": "311749241aa1c0e0584083c2441c26fe:d6713caab20cd9d742d657fdc4e3bdb3929cafc34a79a5b194047976b10f62194960200ba14bde1689ed7b1346c3e7fb",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "c7b6e9ad36c668eb8685dbabf43d3492:f2e8c3aaaaf51d9ce9cb0ce45c838964f48c1f987fc2802617f9e594ca24d0b84f94bdcdb30c8379c1f1f6e17d3c32f8ae37adf7d32b30a54803c8b003606aa63bc4530ef97c44d51bc19894cb62d70a204eb4e05cd54d03d77fda6f5966399e"
+  },
+  {
+    "_id": "1781892397232",
+    "timestamp": "2026-06-19T18:06:37.232Z",
+    "userId": "jaimin",
+    "role": "customer",
+    "riskScore": 0,
+    "decision": "Allow Access",
+    "explanation": "Risk Score: 0/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: Allow Access.",
+    "telemetry": "3ea41c3f01783abdbf96887daf20ff3d:f1591f2a318267d7efc498c9d55e33c1da133328b3e3d2b1ff4ff160dbdb7460bc0d75c9d631c0c3e5a30576ba955645",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "5a40a6391a13f9680422b6088d4d28e5:1d2cae48929604b513177dcb2a1319e11a57893f4bb3e19164d135ea02510936efe6b72988b8bf50053fae55fc9e0a9b1ec22f1730356b07d65784bd0d8edb7cbf7e2f226798085f95bb68b3460d0b7bd5572da5cb05bfbd79b15d1dfb93daa3"
+  },
+  {
+    "_id": "1781892244096",
+    "timestamp": "2026-06-19T18:04:04.096Z",
+    "userId": "jaimin",
+    "role": "customer",
+    "riskScore": 0,
+    "decision": "Allow Access",
+    "explanation": "Risk Score: 0/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: Allow Access.",
+    "telemetry": "e148d0d497c666e1d00a8d598b503c16:d097e96ff1f933fab5d499fe35965a484c3d3e54e9b701276c2a289cc332e8c38bc0d0fcdcbdef254386041d288ecc75",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "4e721240c9da655df5cc30bba6e66d2b:5d1120a8aabc74fb3435a2bd45e12cfa51d38e624db5b21045117ea835c4719f50236e8c71a7bfebc0d39bbf8daaa4a3b81936a25387ea882e05fac3e29a0dc7404910c8cb79d5e52af69f51a46713161dab305628d64392a6904e6309bde39b"
+  },
+  {
+    "_id": "1781892190128",
+    "timestamp": "2026-06-19T18:03:10.128Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 100,
+    "decision": "Block and Escalate",
+    "explanation": "Risk Score: 100/100. Contributing Factors: New Device Fingerprint Mismatch (+35), Abnormal keyboard rhythm / scroll pattern (+25), Password Reset from unrecognized device (+65). Final Decision: Block and Escalate.",
+    "telemetry": "8cd8f41d3b2557320050b73ae6c5aad6:f79f3bd3b40ba08c3934550c6c199c0a78d83501df21239367c93cd98bdb51331133b84e8bb2ee5f3cab7a561b3f5bb7",
+    "violations": [
+      {
+        "desc": "New Device Fingerprint Mismatch",
+        "weight": 35
+      },
+      {
+        "desc": "Abnormal keyboard rhythm / scroll pattern",
+        "weight": 25
+      },
+      {
+        "desc": "Password Reset from unrecognized device",
+        "weight": 65
+      }
+    ],
+    "context": "2622d3a29a3f0f68d299a554e70aff0b:5e58d3558a0a7094e5ad5f238d751ee5cc9a22d4b3baf47851d98a6959643ee143bed91653c820ebbf448e2685c4a9ee488e04cde22a1d828dff3986ccb9f65d0bb0da66ce2df8f5c8a2fda3b78ec7d51347d9609c1c0d7ce1b920b5a37a70986ef70a899cc4d9245c1a7a4994998e81"
+  },
+  {
+    "_id": "1781892186205",
+    "timestamp": "2026-06-19T18:03:06.205Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 35,
+    "decision": "OTP Verification Required",
+    "explanation": "Risk Score: 35/100. Contributing Factors: New Device Fingerprint Mismatch (+35), Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: OTP Verification Required.",
+    "telemetry": "c37a54a8b3b9ead8724ec5939f057173:92e032c16a278c0f7426775f1d2358a42464a09763ee1c537625618e4157cc10d430a9f7c4dfa0a1ccaebd3b6dd92fcf",
+    "violations": [
+      {
+        "desc": "New Device Fingerprint Mismatch",
+        "weight": 35
+      },
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "e6d00eeb17b992e0fb1d765a8539d6c4:d4b300cae376678704bc30e7e695d1309e091337b492c0c34ad4724579c5d2c1cf599d426a83a05c773e03b304f61786da97db251a5e93e7e44867a9ada954c55518ef5843135a865f66d40d559f07d5c0e3203c4ff4d582b9b12ad4ee28fcaf3ea82afef4111c1cec572361600801f4"
+  },
+  {
+    "_id": "1781892174060",
+    "timestamp": "2026-06-19T18:02:54.060Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 0,
+    "decision": "Allow Access",
+    "explanation": "Risk Score: 0/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: Allow Access.",
+    "telemetry": "478e5ed446e5912c8d03b339f326108a:dfd3c7e100b231904f82523c008ee91971a1c5700a34183864c555b62be1a40da5821c5798117a3eb17c30cd20c00afc",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "556b2939f919d99056d304262b4076cf:a6fe72a98c5a694ff06dbb03310a3023ed3f209e0a12c11906dba6940b0bf6c12264564c0471c525fb9b05e6e55b2c79d74cf00dc1ff44a2d8bc8518a7e8654c2ad4c9c9e2c01670a1f3694ff5fe75bedbd4e0fdc9ca5d8c6b19e4f6c6ee888e"
+  },
+  {
+    "_id": "1781892143579",
+    "timestamp": "2026-06-19T18:02:23.579Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 0,
+    "decision": "Allow Access",
+    "explanation": "Risk Score: 0/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: Allow Access.",
+    "telemetry": "ac71a3283db868256de74833a90930d5:7ec8e02d46351b9dc7b519d2ffcc87b51f32ea087c7ca32d60c2fc8f24434db1823fd49a913d77fbae2653ff73865e17",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "bd731a1c7c1721c78a3f5211eb200b90:f89706840f3e6731fae09005d2a39108220bd8dd6b759dd3cfe3ff1a240a9b824deb13399cba73039cb6dee35ce2597ea6cf75d4daa02481414e456b5de3e2049fb44f9a9ba5d88206f2c6d3cefa88961f6a767390d02b596dbc4e66098da1cf"
+  },
+  {
+    "_id": "1781890698264",
+    "timestamp": "2026-06-19T17:38:18.264Z",
+    "userId": "remote",
+    "role": "employee",
+    "riskScore": 0,
+    "decision": "Allow Access",
+    "explanation": "Risk Score: 0/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: Allow Access.",
+    "telemetry": "17641b0b9d797f1ed4257485a97967cc:ed51c69b43490d7ba6a3d3e5e924c4f9cd5d2c458cbf0b7d6f5447a29efae5a012408323c56aa6f5e44cb7759883e15b",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "854e7277b6b2710fb4405de7bce8753d:c4e8004d29bd91077ccf53fdd105b61b066063ebf8b7bee26da2e00507052c8d3f77a222de8f0de2ce17ddb9c5d6c336d5a1d0278e059e1944e4b7791853d2c98fb67384088bc0074da194314c8ae2177d0eafe61619c1e668b86247dd3a24fc"
+  },
+  {
+    "_id": "1781890451141",
+    "timestamp": "2026-06-19T17:34:11.142Z",
+    "userId": "modi",
+    "role": "customer",
+    "riskScore": 0,
+    "decision": "Allow Access",
+    "explanation": "Risk Score: 0/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: Allow Access.",
+    "telemetry": "6db193364a6d433c64cb5177ec425901:bcfff6eaa9f9d309f1f76e6aea3a1fc41fb18561797117a0c255248975ed2ca044547a96f53a1de55f7a7dce7c29b38b",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "a800bc161a04af63da13fa58877ba784:06e2d88c3b2b4f91e0fc5fad1d33ea2ca63f78c68d7d0acfa3f0a34697f9e990a5e82bb526b9485421d27d246c6173eed445f7123237ecd668bf6a69551d70353be4bab8197420a070ebe2d6d05d4c532856de08ff95d8cd5b693f66df572621"
+  },
+  {
+    "_id": "1781890428205",
+    "timestamp": "2026-06-19T17:33:48.205Z",
+    "userId": "remote",
+    "role": "employee",
+    "riskScore": 0,
+    "decision": "Allow Access",
+    "explanation": "Risk Score: 0/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: Allow Access.",
+    "telemetry": "dcafd3de489e4e7ba7d92b0f0204ced2:8c7dce1a5ffe269cce3c62c30d88f727a95ac7330752967741d150880185f7f629d103f207df59408daaf3f3093ec577",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "49d3853dadddcb25c5ba8adfb1d3387e:9d3a48b90aa712eac7004de36bb955d2ce80d9f2e1bb66391f12ce9b1ae0d678b6400ffe27bb2d95a80d94d4522bf761fcfa3f24453dc58607d7d3785e33d4e4aa0b6c45a1dcb5b8b8f1e070bc42742ffa790d144e55f9134701633bfa10e60c"
+  },
+  {
+    "_id": "1781890245371",
+    "timestamp": "2026-06-19T17:30:45.371Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 0,
+    "decision": "Allow Access",
+    "explanation": "Risk Score: 0/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: Allow Access.",
+    "telemetry": "36bbccb9acc4cde96e84ecd5414c30b7:d3476067590efa17a984256cc6099c326a3f761f9302c323f499a9b928b32b3b0f7dfbbedddfd7d26e33da9b022e3eac",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "66104b98fcc18f7a0e0fd0b5dd41078d:3cb23f6c95e4327927525fd84c1cb6146ac687121c9f71b550eb22abfdeb690bc5370aab11254300eb0ec3c7891440d761856c8e9b98e8e20ea764a46e312ec82f94f1582a5dddf40e5b2a713df12d44c9d799fc87d2d467ca21c5b6b6674abc"
+  },
+  {
+    "_id": "1781890213629",
+    "timestamp": "2026-06-19T17:30:13.629Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 100,
+    "decision": "Block and Escalate",
+    "explanation": "Risk Score: 100/100. Contributing Factors: New Device Fingerprint Mismatch (+35), Abnormal keyboard rhythm / scroll pattern (+25), Password Reset from unrecognized device (+65). Final Decision: Block and Escalate.",
+    "telemetry": "b27ca296b34b5611f80ebfffeb4309b8:64b3ca4c61aea90ba500b56bef41bd4cd77cd31d82addc97018f0acc86cb87f3920765ef08d3fa56a2dcbd270664a032",
+    "violations": [
+      {
+        "desc": "New Device Fingerprint Mismatch",
+        "weight": 35
+      },
+      {
+        "desc": "Abnormal keyboard rhythm / scroll pattern",
+        "weight": 25
+      },
+      {
+        "desc": "Password Reset from unrecognized device",
+        "weight": 65
+      }
+    ],
+    "context": "71765ec188949d7519fd45d91a3d1ce5:4fedff9e5af23d16cbc1933d70a30878d9dac5b3d9fc1f7b4656cb5a1b678fd13206779f6682371fab5aa39d595e466ddb99f6eeec22f4002b2ea6d7cae0c8f7cafd9efcdae2903828a9e39bb8498e25cf71e39ace8359b8856fe25bfcae04424c1bf91a63c4248a5edacef02ed5e303"
+  },
+  {
+    "_id": "1781890174725",
+    "timestamp": "2026-06-19T17:29:34.725Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 0,
+    "decision": "Allow Access",
+    "explanation": "Risk Score: 0/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: Allow Access.",
+    "telemetry": "839af8d8e98029455708e56df1b0bb53:949b18ff3d02664060affeff737c0224c0391e9d6241118d76d2336bf0b5b704f8c3e9e2640aee138984aa0529589ea1",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "bb29dbccd4898d0104f4eb6c35490e6f:f9c9b0068c1225f51186faa7b9012b6a2113c3d7d15924ce0f4c17277929321eef1fa0fdd8fc25746f32559d0d96a86afbdbf25713a9238b0402a8e0abafb199913bb19216530bcaeb747be56b587d455a6d58236b92e5e9cca3d0c3ed545534"
+  },
+  {
+    "_id": "1781890027936",
+    "timestamp": "2026-06-19T17:27:07.936Z",
+    "userId": "modi",
+    "role": "customer",
+    "riskScore": 0,
+    "decision": "Allow Access",
+    "explanation": "Risk Score: 0/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Trusted Behavioral Cadence (-10). Final Decision: Allow Access.",
+    "telemetry": "cabf1854a3366088239230f7b7734e6a:c9d5b6c8941c37fef5f47e8d26bf273f9900bc755466783263a5d4047f98bad4d256e18be04328110e17856ce83c6e19",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      }
+    ],
+    "context": "40dc5e9184638a20700d1c3e1f8cc671:dcaedfb7d50ee9cbc9ba5ec1505c5cb5a63baeaf22d05f1d649db8c4d70ee5839febde4c55e695bc2b795157ed8602633349b20b5b3332bb5e2af1d7085b7c3a4d638b9d18cafb1adf44f377a0c9bffbfbfdd542c357a22f6b66b267e103f850"
+  },
+  {
+    "_id": "1781890001501",
+    "timestamp": "2026-06-19T17:26:41.501Z",
+    "userId": "jaimin",
+    "role": "customer",
+    "riskScore": 65,
+    "decision": "Block and Escalate",
+    "explanation": "Risk Score: 65/100. Contributing Factors: Consistent behavioral biometrics verified (+-10), Invalid credential match attempt (+40), Trusted Behavioral Cadence (-10). Final Decision: Face Verification Required.",
+    "telemetry": "6f6012ae16b0d1e4163399287e6e89b2:db4c9ecda2c93ad581da4373164859fd4d073aedf4c570187d0127b6fbfd7b61a0ed62283da55a73674675e48c8977d8",
+    "violations": [
+      {
+        "desc": "Consistent behavioral biometrics verified",
+        "weight": -10
+      },
+      {
+        "desc": "Invalid credential match attempt",
+        "weight": 40
+      }
+    ],
+    "context": "bada04f245f78b31e001dffd25a99a30:c319256cf4fc19086c87527174f4a091cf6c8cd944ba9a01bc2c7406836ded73bd36eb68d347136fd33c39b3dee0c9d71d050cb5075b71bd0cfd31d5a2881105175d93799d7cf9c6fea28a8e73f019c82c34fa25d1f9ef40077179ddd5b276ec3d60c68c25f0558f315a84520a3670a9"
+  },
+  {
+    "_id": "1781888252527",
+    "timestamp": "2026-06-19T16:57:32.527Z",
+    "userId": "jaimin",
+    "role": "customer",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "2f3a4979d55c411264dc39445c30756d:00f34890ec467afbc6fa773151ed01391e51bf5fa7c166d16ff97c203766297e81df807b289cf647aac625d944581b24",
+    "violations": [],
+    "context": "d68b7bb92e2d00d1096cc6d386889a9f:adb0f352b2a1af58a8bf96cb22800f1518fa65937d82d7f1b641508d84599ce766d6bab9b9814714b21f1bef44a1029d2f6523715dad52c341cf23984515bda5322028d2a2488ff8a483be662e92f0e7da063b7357156cb6796a0861e209219ba75677288374ba550abc8ca4d4bd1a0a499272c8ef35c7fe7aa6cd7bf93bc1a56363d2bbcf0f482d78cee96e71dd7f511d6b43552cdf38a6af380282ba32d83ec254f24eed3a801db2c9a72aafc873a15ea5202f8a2d889848f44256abbccdfc1064432f14c4217f1015507ea3b4d3f5"
+  },
+  {
+    "_id": "1781888210407",
+    "timestamp": "2026-06-19T16:56:50.407Z",
+    "userId": "bob_admin",
+    "role": "admin",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "2d4028fe0c7358bcf47f005e5b914e54:b3b0fef7c77f24d4bbf5acc64eb9781587bc2b8a00d6b3223c9017da98b76c026aa93b4754a062d1f111f7670c09cd6f",
+    "violations": [],
+    "context": "f23f73d93d9457964f70320a299a6827:bf23ebf5c3b579531ba7c72332a0c57714476d68e721c9c30ccba5c1cbe6d7b1353066342e1c5b304e2fa0b348c5fb4240594503a4ff1a605b14a7a13a04abd73e8bcd90a2050ab867782a7947689ddc9c3abce13883051f633a18c651258fd6c16c7b2515da7338410cf5f805a5739f8192addeb8276042d51b15e250cacbd48edcffd0079a5e7946dcdcfac253aacdb2415e7684c1cece01b71602cdf0aa4a"
+  },
+  {
+    "_id": "1781888195911",
+    "timestamp": "2026-06-19T16:56:35.911Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "f847fc6a39c02dc097b2a4e74f5ad4ec:f1219cd20ac99cc799d1c5dd05eea1274147ac2052e897c2f2c51d3b46073dbc7343fdf01b0f938aeeeffa3a0343f87b",
+    "violations": [],
+    "context": "cd4638aa50de4ecf266e627843afa763:2f55aa4b7e888df4edd0de235095fc8b9e1ed2fb61cef20f656559f76fcfe1a3ee2f21e097fb140ac44bef5287fdfa94d975617cbcdf8c2c8afc2576df3e25590eada31b06cc218db4e837b5bd556609b77c155f69df5a17fd05013e09501e92e0642271e0cf6d4a2ef1d58f91e1a7f5e2cafa4d20149592fd6fdf96b990444f8907687a99da3d69ee130cce2b73e06274ef67e1151cfefb45fb239b791a1855"
+  },
+  {
+    "_id": "1781888061101",
+    "timestamp": "2026-06-19T16:54:21.101Z",
+    "userId": "jaimin",
+    "role": "customer",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "9ef6385ca66004227b78d8892a599937:251d175cf45c3bc82d24fd370738fc0d0b02f8048f8b65ccec93534608bbf2b479cd8ba065110b48b2f97237615a4a5e",
+    "violations": [],
+    "context": "1bede635586cb00b0854aaa887bdb656:5c155f301f7246f67a1bbcb8b661f224006282399cfbe7147c656e8b2ff846f56fb71f3c3495cb41bbde26b38565445b2bdc728d2c4cc0f0762448a6a7a45100e8f2d020306762c88033a253cdccbb36d4216d77d4b8b5f1ff45eb619610514dd3cdc0c28cc2d4cfadf74b5e38f5b36e3751af8821e9c17038d1baa27614a92b36784a67380bf6ef8b9201f926a981014d366de6516a21a71427695bf2cb978d829797eb21fcf5a11ab170befeb1ec58d57b80e1df37256c00007cde96aba6e4c0354712bd5a3589fdb5149a673b8c02"
+  },
+  {
+    "_id": "1781888015476",
+    "timestamp": "2026-06-19T16:53:35.476Z",
+    "userId": "jay",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "4ead9d6b774266dcf9cfcac855b661a2:38da73791714d519a4324c1d371c320029f7f92a64f7db9b5e1e47769adfc407124e42dbf4c3b889a8a15af4623c0789",
+    "violations": [],
+    "context": "f2194a122b114cd8ab6caa863d7c3290:45c97ca9ed30051f7b1566e6d2f68df4067cd8d7362c6c93477dbf38a99b00264a6ef95c50ea5c9dcdbc525b731e61e3553400c0484b63ec59ff94167c5b6fb19d3130b23a95cc2978d2d0b213f75dd56792cb34c67f14077df73c6131bbf086fd7ae7960142ec7786560e0bc82e6e9033dbc22845a173f34456c00a17bdacc9e09fb428ba78bb2fbbf952fd0034cae03abaae5283d8e12a7270e5583c351e853c0f4c188a1257a036d2543d6d4e1d343799691fffbffd7e2d15d19f14aafd586d37b38641552c2d1c6961fc1c1009d7"
+  },
+  {
+    "_id": "1781887870761",
+    "timestamp": "2026-06-19T16:51:10.761Z",
+    "userId": "jaimin",
+    "role": "customer",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "fd391bc539862b423529fad97b0b5465:be7fd3ce4de31358a4d46fcdde24d1461eda3149a66d3275ae1f6aebe1e06b9f388173b940cb3f05dd3f1223be2681fb",
+    "violations": [],
+    "context": "772b7e146a7ce20b8f24faed76b3e695:62d65f87f38d09a737fbf3a8724492964af89e4f376ad15084d7301557c0b8ec957511a6205d13cece6a2240eb79b1e45688bef8e2e07de5680f79f3bd6d4b61620bc749d3df74b047960bbaa561c4b43e42024d31059463289ed617714b6bb09d89363d6c27e8dd11d01404ec587ca731e830b82dd8d563ee237826049c9cbf9d01790d8b0ff8f250f0b01468f87409829fa1e792c4dac430695523934bfd31e91379d7f7b3c0fac260ef7f76175c9cc3e63e3bc790c4c091098377fe43aa8e8b7f19791b720da1ced269f21fa80575"
+  },
+  {
+    "_id": "1781887487407",
+    "timestamp": "2026-06-19T16:44:47.407Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 0,
+    "decision": "Frictionless Access",
+    "explanation": "Session is secure. Behavioral signals and location context match guidelines.",
+    "telemetry": "881be09f180c434332440ab4a4750af1:9c2d31b629094f1ee9db10ef46e6bb03da2911d67f3614ae1bed7038f7cbf25943e70508a3c62d815c17de36d31c4189",
+    "violations": [],
+    "context": "3090248f6a65ae62ec1e1b07d0083784:ca125e27f5a53196b111ed2cb84ad06990f4f0d455c8b3d3fc2c7d22647eb7c98c9e8a0ab81680b9aa8abf30b88d4de3eef49be413cff8e81a21c7032e3c79767c43c26013dbefb2aa4fa03fb4e3f15946b4d1f48b089dd2620a0eae908e14b6b3d73d8b0960ba45d8a91c7b20f981ff077ca4ddef95f88571dbdf318fbdb763c53a9ad73552f2c29952064a0b94472d0875d35aee0773bc33440b22465800e7d104dc4bb31ec3e3f2194b9ece803c1961703153c75950aaf3ba34720aa50c94dff966a40eb04e97db8281ebde6e62360772408c2929dbe8c7e2613aade7e4e3e80502f97ca93fb5c0e06e9fd74704b75e99d79ed3a859efac805b2a68d0477a0942a2fd1ba02cdfc1802017538d9991"
+  },
+  {
+    "_id": "1781887468253",
+    "timestamp": "2026-06-19T16:44:28.253Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "f04c154a0512860270f010a7cc194673:f1c115d3012d72977a2fe229bc6f86b81cfb012c4f26b13af8e7650ffb1ddba34051a204613ba29a6a8c057e319298a7",
+    "violations": [],
+    "context": "bb90e6d46f736c097f817d49b3c28e65:507b4aebec47594ea3c80b9f8b646fc63730dab5008d6b4a6d5d788500ba67043378588e7d46dbfb83723a49431f985d090d0001209bd20cd0305b2f2cf8d3d77069320e0324d39eca35f1982f3577db16d949038e242fecced902a6e9dff6bc5c50b938f25b849b1d3d5a1c68c47cfa69568b32c60b7a78186878245db111883df073b2d72e1a5f2ac7514db564b1fb72b5862a667beffd59c55e46db579f4c8696f73afe7ba489a2e7a12eb269a364cb7cbf4e64b20bac274ea7d53b327b8ee9d282d4d9c8ed383ce248c1414e874b"
+  },
+  {
+    "_id": "1781887444920",
+    "timestamp": "2026-06-19T16:44:04.920Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 29,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 29/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "34fbec6a2fa56efaebe5b73431f1b87c:d9eabe1c5f177e0f49f130a20a0b6c3abbc3b602b74408437ccfacf32373701e783f6b8cb3a380e3cf0e958d8d943a55",
+    "violations": [
+      {
+        "desc": "Browser canvas and hardware fingerprint unrecognized",
+        "weight": 20
+      }
+    ],
+    "context": "040718bc95653bf85e89507862d4b588:1043626be85fe80a24f2ada44f61452c375435c9525667e0c4034e45f7537d9b2080ee8f56db540ae509bb25b209f1db946d5b0103e20b50c46acd206f6cc6af3d9c1b6ab0df2ff751aedb3d87d2907ecceb2a37f5d70a252982aedd4975ac3e97f55e31a2bbeb1c698d7a617352e48f55db4b59844bf9e8543c0cfded05d6476846261388198b93361974c991f732a01f69d83baa00e3ca3963ff70ded9382b6e59ebc1f915d6c36721936953001f791c5fea897c7d875287d9d00ab86c5bb8"
+  },
+  {
+    "_id": "1781887420719",
+    "timestamp": "2026-06-19T16:43:40.719Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "eae31d6d9165c764532754c930671f74:ffab187ec439b3ddd53b7cc0e113e28c1edaad0c032110496fe392849804e55b3fb5d84163d7757e15b4bd49b13f8838",
+    "violations": [],
+    "context": "99c36a8b3fec1a1f4e3b376fdbff1f9e:bf2155d1ce2426937675e811647a573b"
+  },
+  {
+    "_id": "1781887420658",
+    "timestamp": "2026-06-19T16:43:40.658Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "cf82cf0f4d7bc3d7389592a6bbccdc66:20f71c731ab786c6641b023bf450f9c91988cc2fc56e7f500c3c12afaee04e8044e00ad88159bf4c9b705199b04b8f62",
+    "violations": [],
+    "context": "8031aa467b8017593a02a16a50c18ce3:01b1e2de4f14dbc0d08851f6ff78812c"
+  },
+  {
+    "_id": "1781887409773",
+    "timestamp": "2026-06-19T16:43:29.773Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "0750fcd673c5d0a0900fd1426da8e073:03ae74c810ce23ffacc3c6fc70699cb573ec01e6df721962fc13875b1ed17ee6c7c03692792782fe4ae07f4c324f01b9",
+    "violations": [],
+    "context": "2d51f7f580b559e5aba5fb9f3a33b28f:331a615d12cfe1ce5fea1b99558cebe3"
+  },
+  {
+    "_id": "1781887409769",
+    "timestamp": "2026-06-19T16:43:29.769Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "da1aaf7091b572681f92a8722b62abcf:104e80332dae4ae5c24d46a721d3d650e0a9c13376ff92f53e9e75da6c3b2b8bc560f329f660a9763663099e710b7799",
+    "violations": [],
+    "context": "901df91553d5f3546e7bf9853591a03d:a2feb655fc109585a39a9edd47de6505"
+  },
+  {
+    "_id": "1781886472904",
+    "timestamp": "2026-06-19T16:27:52.904Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "f08ccc765437cda10d19208622a5b823:3e623a9781b3a2ea0beaadf11b6a15cbdc0108da49d9e58f01e9f4aad685aa8ea15ea81a76c2ff15a8a048b3bdd50f1c",
+    "violations": [],
+    "context": "486afa677434c0933a8e2438aa8b6971:385c5569fea9738df8a751b2ea978ee0"
+  },
+  {
+    "_id": "1781886472892",
+    "timestamp": "2026-06-19T16:27:52.892Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "8e910210d006d7698dea995c834992c9:1c530f69d57a0770c065a056ca579f0c9d4194e7cf70c00dbfa60bb2c1bec208c6f7f8fc03c59d1b96df4b13be3c48df",
+    "violations": [],
+    "context": "b997196280f94b43838a2b1bfa3ef7b4:3fe921247eb284a26dfb493ebd9ca5a1"
+  },
+  {
+    "_id": "1781877357543",
+    "timestamp": "2026-06-19T13:55:57.543Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 20,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 20/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "d4fdccff0c289a32c783e7af8f94415b:ba2462d5e7ec4b73659d383f48a1d3ff857d56376c5678a768866f0e2836f5fe4d345159db5dd618f3a9d648b7f79735",
+    "violations": [],
+    "context": "eea401be81a0ee479490e2a90c392c4f:fb5d1f0c476f8d63f2c69310e687a2ade81a764e13b9325359091b7f1c86df87f5a569eddb7ea10502bf5cbac0a682c0a72f5e3f1c976c4c40d264acc8baccb5dc776af1ab4b569bd214777ceee8c1fd7838a6dfddbe963633a304bf20567fc9e45f4048327c01d335c807140779bd05c4c6e90b480dc6f51269b96a02b25c29"
+  },
+  {
+    "_id": "1781877350215",
+    "timestamp": "2026-06-19T13:55:50.215Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 32,
+    "decision": "Blocked (Credentials Mismatch)",
+    "explanation": "Access is cleared (Risk: 32/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "ad5cf449bf44bba20f2c139a5dca83c1:9e097893ece46eaf0a15b92a256c247ac23b1b0977f4b94fc4b0eca15d205601cd2524d01b02a9762eb859ad1d43643b",
+    "violations": [
+      {
+        "desc": "Multiple failed authentication attempts (2 tries)",
+        "weight": 10
+      }
+    ],
+    "context": "7e44e282cbf5903ade0de672f123f643:092ed05cdbd02b2f3de424802fdcc479302d57f64e12b80cdcdc5c551f93135ab50858c61bb1f0891f12ab8e2d820bf4211c1effd95b7caaa80afc5aa2a3d53553cb422879bbd4c14f013eff0359ab3f7dc5a6f04a6f61f2e71a1ab2aedc1ccd313865cbbdb9a6a434032371e5514bc45ca0a7d15779139b82b5000ac7933bae"
+  },
+  {
+    "_id": "1781877340507",
+    "timestamp": "2026-06-19T13:55:40.507Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 100,
+    "decision": "Blocked (Credentials Mismatch)",
+    "explanation": "The session presents a moderate-to-high risk (100/100). This evaluation is driven by impossible travel speed between consecutive login locations, connection originating from a public VPN/Tor subnet, an unrecognized hardware device profile, and multiple unsuccessful password entry attempts. Due to critical threat indicators, the session has been terminated and the account is temporarily suspended pending Video-KYC verification.",
+    "telemetry": "7ea7214885ec94749fb89f37b45d89c3:9d2e6b572a93bd2ba028a3a6ff2416d3d5223090b2efe2c5cf271f895c115a2db63ebf8b0fc1d6f8791d030ca0491ea0",
+    "violations": [
+      {
+        "desc": "Impossible geographical travel velocity detected",
+        "weight": 60
+      },
+      {
+        "desc": "Device is rooted/jailbroken",
+        "weight": 50
+      },
+      {
+        "desc": "Browser canvas and hardware fingerprint unrecognized",
+        "weight": 20
+      },
+      {
+        "desc": "Connection established via known public VPN / Tor exit node",
+        "weight": 15
+      },
+      {
+        "desc": "Multiple failed authentication attempts (2 tries)",
+        "weight": 10
+      }
+    ],
+    "context": "776f88547ba11d5425ebaa44cf4c8329:eacf8b83ac9105d38328b6e864ead88c09b714b1a098bc7e94daa60e127a0ae8548f5250d024c11ade19f733b1b9dbf5341fa5216bad222a1438db581d237eb261f8d618920b93bdd272636de9b1f03489ae55d33cd421fb22e584c13dbd0b560749098789de3af3ddfe88b149b3b4538a8127c7c9bc3e516ca782d9d7a86409"
+  },
+  {
+    "_id": "1781877314280",
+    "timestamp": "2026-06-19T13:55:14.280Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "927d1ba821bf9c802cc9ddce90c619bc:1138e53f170d67f50775eb659d8d93974513a6012e073b044424077286df1293f43caf8d21b176d3c5f9fca41975313c",
+    "violations": [],
+    "context": "aaf25d6cd6593bc25af84cba355aa8ec:bcd87ad45ff5d2dcd8132436382d8dba"
+  },
+  {
+    "_id": "1781877314268",
+    "timestamp": "2026-06-19T13:55:14.268Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "50158455c8d80969ab8dcfb4064abc71:9e3b63cf3c7dad1a059c2faf0877e94445b4d5d860a6b1fe401e6ab788f73e703d69bbfeba1d9b282a64ed273c502778",
+    "violations": [],
+    "context": "ca6b76ba40a60ebe39e2508b9da8c75d:b879175139d28712b51a17b40800f008"
+  },
+  {
+    "_id": "1781877280812",
+    "timestamp": "2026-06-19T13:54:40.812Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "a36691343fb3d1c19e1b4c665d48fc37:024ac904aacbd32b44b23eb9d7f0a41bff1ccdad26f8b2292df09359a76ad875f49425a9f6e16e027a07534bb3597088",
+    "violations": [],
+    "context": "82f726db655c1f929a37206083e2f7ba:69c29c1c75d363b6fed37c59a5ade300"
+  },
+  {
+    "_id": "1781877280791",
+    "timestamp": "2026-06-19T13:54:40.791Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "1bfa96bf2c49b076909039fa2ac98948:7f38c018d6d626b799d0a5bd1f655ab103687dc728ad7fa44f3b4551cb4d83908172cdcadc54f750c706e9060ed0e6b1",
+    "violations": [],
+    "context": "36f5f16a39df11f1f3a18183d9d58369:309aa56af0a2d23d97a7fae73a5f637d"
+  },
+  {
+    "_id": "1781877269405",
+    "timestamp": "2026-06-19T13:54:29.405Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "2fbba01f3d4d5ac4ee3cb5fc8ca0f212:fa11e6306f513d478f689779e55cd40792f7956a354441efcb75e381a77ac25505b492a4263b72f1f1250f90595b0997",
+    "violations": [],
+    "context": "8aa481950d4a1d34d7b59311885a624a:d588ed73c15b055894f0805b8e3c9b67"
+  },
+  {
+    "_id": "1781877269368",
+    "timestamp": "2026-06-19T13:54:29.368Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "e0598ad06bf9a8423caceb3fb73218df:c8a28d5dbe6545e7fff54659efe1b69bd627850093685c648c4840aa3b3f47c6a0550d924d1c127dd4dd0cd4acb2476f",
+    "violations": [],
+    "context": "23d2870070b3d17e54ef1c6696f462d1:0e8ae68fa42919cfd3b6528aec1120e9"
+  },
+  {
+    "_id": "1781877256165",
+    "timestamp": "2026-06-19T13:54:16.165Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "3379e03d403c557b99bb5c0e1e521f7a:4c86f0e17c4e95fbe7393c8e41225bb74dc1361d2a65bc82c3f6940bed8ab5c6bf4dd5d37f8691cdaf407b0fd6b6601f",
+    "violations": [],
+    "context": "6e5d09228430c562df75170a5ee5eb00:bce750091062a5948a762bbf5d4c8168"
+  },
+  {
+    "_id": "1781877256148",
+    "timestamp": "2026-06-19T13:54:16.148Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "ae86922abee68439f61c727c4d298e47:42ee630410cc558ac5dff06433d2d5c4e62aab4b0c0b8cba3dc83891625b4c904e57942af9bf804e8f0a4c00efa6e81c",
+    "violations": [],
+    "context": "871dd3d883da2f6d691d683b2ecbbb00:05da11c25b7cae89da4faff846a71a15"
+  },
+  {
+    "_id": "1781877248519",
+    "timestamp": "2026-06-19T13:54:08.519Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "f131959e7f09d737d6facf17c5476359:f750fd116b2ff46ad27c757eff0d8b2c3dd2fc973909d3fd5e212143be153e0d44ccf343394472c4a296e4b93d5343b4",
+    "violations": [],
+    "context": "dafb3e1bf33ed6dc6975edcb05078ebd:b5df037fa6af1eac6d73c5062ac98b68"
+  },
+  {
+    "_id": "1781877248505",
+    "timestamp": "2026-06-19T13:54:08.505Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "d6ecb2f7c12c8cc3ddf8f19655fa612d:8b33de533552e72f770be5ea733c1343a5a9d5f5645132d049cdd691c63a3ae7074ca0b6bb7c6cbf1fe10722034b137e",
+    "violations": [],
+    "context": "1a49960a8974a31a2e64d1cbcfcf381f:65b75bb22e3e2b18336e272d63e14533"
+  },
+  {
+    "_id": "1781877208511",
+    "timestamp": "2026-06-19T13:53:28.511Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "e0e24d9f6b3048df079ee1006eaf1521:880fdd7a701e2e056eb5582501e1d5748c63cc06e1f0bb602d8ed5ebfae4cd49b893ab209da00bd7a4383f3d71289f8a",
+    "violations": [],
+    "context": "903445a75cc46a98de7eb481eccee19a:d83a7c3745668e9eeb0f2370748f7601"
+  },
+  {
+    "_id": "1781877208489",
+    "timestamp": "2026-06-19T13:53:28.489Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "19fb8cb881f2cbc050da74972e87df95:6c0a4abc19f863c214293d6b00be54dc8d85225547fa741329823b0b13544532af2457ce9c44045ca6b760a5f7e5843f",
+    "violations": [],
+    "context": "5c0cb20f718ae279133f8c430c40e648:625a75f88ec4a18833bd7c6c9a46e609"
+  },
+  {
+    "_id": "1781877010576",
+    "timestamp": "2026-06-19T13:50:10.576Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 100,
+    "decision": "Blocked (Credentials Mismatch)",
+    "explanation": "The session presents a moderate-to-high risk (100/100). This evaluation is driven by impossible travel speed between consecutive login locations, connection originating from a public VPN/Tor subnet, an unrecognized hardware device profile, and multiple unsuccessful password entry attempts. Due to critical threat indicators, the session has been terminated and the account is temporarily suspended pending Video-KYC verification.",
+    "telemetry": "40cdce69f8c54834b0b52fd64940e712:66129ab1c6bca0959d5067fadc8e20e0766de616dae1cb649b161f7d1e5c1c2b03857e23888a01a77142b97f221804c6",
+    "violations": [
+      {
+        "desc": "Impossible geographical travel velocity detected",
+        "weight": 60
+      },
+      {
+        "desc": "Device is rooted/jailbroken",
+        "weight": 50
+      },
+      {
+        "desc": "Browser canvas and hardware fingerprint unrecognized",
+        "weight": 20
+      },
+      {
+        "desc": "Connection established via known public VPN / Tor exit node",
+        "weight": 15
+      },
+      {
+        "desc": "Multiple failed authentication attempts (2 tries)",
+        "weight": 10
+      }
+    ],
+    "context": "6d442ec8289b16e7f5f5784460a38225:ef79c67d6aafb3a26d45f522ef4679ddf74fd9f2460ff6fce6a485c83c769269e58b31b5eeef10b40bf044cc188ffff430cfee94cbc867abfa8688336202f2cd9ed4083a74b281d5aa7b1405ac840e3ff544e14d2fb0eb421cfcd3a329255afc25892a802a011d8b30c1a2387becad41686fdbf91b8658195de464166d6b927d"
+  },
+  {
+    "_id": "1781876992425",
+    "timestamp": "2026-06-19T13:49:52.425Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "5a3a828b020b781bd86bfc68765b5ded:41ac6b2fa06329267ef94c7ccea5a6a0b83b65aa4ba59e206e9463a8f2324bb388751343842e3fb1c07a747cfa194990",
+    "violations": [],
+    "context": "528346db4e78c38951398eccf7fd3746:a4ba9179202535f09436257640578e91"
+  },
+  {
+    "_id": "1781876992399",
+    "timestamp": "2026-06-19T13:49:52.399Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "0f2cb7b20b106482f14c18ca53d2eedc:28a64eea2b4f5fd5d37c4705c12a53a4ccd0ec4f61086b6beb7f8862eab834b724d3be81a1bf60e4d392f47a6dd92da3",
+    "violations": [],
+    "context": "9247e5812e7dc6cb2f1a3275cfbac266:a21999c00b3d9a4c756e463c6a3d42da"
+  },
+  {
+    "_id": "1781876969829",
+    "timestamp": "2026-06-19T13:49:29.829Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 100,
+    "decision": "Blocked (Credentials Mismatch)",
+    "explanation": "The session presents a moderate-to-high risk (100/100). This evaluation is driven by impossible travel speed between consecutive login locations, connection originating from a public VPN/Tor subnet, an unrecognized hardware device profile, and multiple unsuccessful password entry attempts. Due to critical threat indicators, the session has been terminated and the account is temporarily suspended pending Video-KYC verification.",
+    "telemetry": "7e2dfc494d79b369885bd29e9669f677:854f628f19e6830f15e89cef9c7e9d163c457ec6a9d8533dafc793f6cbc6261bf151fddfe174fe27e5ef02a77668861b",
+    "violations": [
+      {
+        "desc": "Impossible geographical travel velocity detected",
+        "weight": 60
+      },
+      {
+        "desc": "Device is rooted/jailbroken",
+        "weight": 50
+      },
+      {
+        "desc": "Browser canvas and hardware fingerprint unrecognized",
+        "weight": 20
+      },
+      {
+        "desc": "Connection established via known public VPN / Tor exit node",
+        "weight": 15
+      },
+      {
+        "desc": "Multiple failed authentication attempts (2 tries)",
+        "weight": 10
+      }
+    ],
+    "context": "9734decf45aa272c85db8db3ad9e8027:3ece4d00b62214c75180717223e606b086e7a5ab2cc71f6a80b86f98c0ac9538e49b829d43b383368598faba5e1335a22cdc6331d3ccba893b536f8d4e20ddc1323609fcb8208c7f74c86299cac7dc4cd309d3f85f5883ed997cc209305524ef7505bcc8251cbf3289f863be80c9e557c051939fbaf2aa20adf1f93198072aa5aa5b4a10819a8ae953d2b3f51bc3ca4912c2604010e7c735a4611c567f81f4563dc54cd372d5914c21b601cbe23465d92c675d23964c0b3e23729433abb8d2e1"
+  },
+  {
+    "_id": "1781876663859",
+    "timestamp": "2026-06-19T13:44:23.859Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 20,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 20/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "5f8078ed031e2b65d9292b725678667e:97cfd3a677d519f2f8e182e375bf59b946021570e1f1cdb3842bbe0bc1f410d7c387724f78e81bb263bb293fcc5d2032",
+    "violations": [],
+    "context": "7cdce9c6da552dd0b41743e88d1a3370:55f25f802684ff3453b7c953d2eb2d517aca02b3ca5daa2d4dad10e62b76e53a4fcee0e0c047187a2a6a39da21be6d4347a0791ac2b3f66d97c216225c82cea8708392ad59c373a53ec1630e2485fa16a3b7dc014700a1924cffd977e73b21d37fa57928cfc99ee9925a2b0b51656380f657b8af30da9e3883b8dbeb2b1cb909a0dac3ed11e84526ed36c72d7b2e448a0f40f1e63b7d9147d0dd4fa99108d2807a75994cddd0935e6cefff39add401515c61798b47b6ec4565fb77621deb33e7"
+  },
+  {
+    "_id": "1781876607634",
+    "timestamp": "2026-06-19T13:43:27.634Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 30,
+    "decision": "Blocked (Credentials Mismatch)",
+    "explanation": "Access is cleared (Risk: 30/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "128c6e413dd961c5beb96431e0b5664e:0b1c90c1bb0db83788d6a34ebe8d0b7f3e3ef659a07656a38cea5ef975cc70d1438bd9012b4cb832eae76c2e1b5bb65c",
+    "violations": [
+      {
+        "desc": "Multiple failed authentication attempts (2 tries)",
+        "weight": 10
+      }
+    ],
+    "context": "d1a59334e8e7ae976d21e771cecb4a48:3ba50b11bd516dfafa8ad936b504b0ed14735dee99e2d65188cf5da06ed9ec9b63bf70dfddd4c74db305be9aa34df77f034328ac17e6f5812d4e4e5c0b5cddec87682b07274b84bf454f41c0af32da4ed534acd9d0ff9e130d9bec6748831aefc2d8e67063b183a340776a0d0fc1ed9271bb43750f4f3e808b756d395aff0edd9b1d1bc64cfe0bf5a17402d250cbb2259e7d1f08cd1c6fbca8106f2f9b2bb356e04926d61f6ecb268f789c8d32ba0f6c24c7463b3a78127972e303d26bd31bc9"
+  },
+  {
+    "_id": "1781876598290",
+    "timestamp": "2026-06-19T13:43:18.290Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "4f8b2eca609f49494d09ccd0ef8d6118:66c2a0f653e78bea8e667456b6829ec7376c1e368b82c03d83a4d64af984b8c66d76cd7226d9c88ca92d1294ff4b33a5",
+    "violations": [],
+    "context": "80db947c852ae57a39d6c5b321755a77:4c5219426e52aa64994b9e5d582b0201"
+  },
+  {
+    "_id": "1781876598281",
+    "timestamp": "2026-06-19T13:43:18.281Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "5f4a1cdc869113688bfd7804052f6712:acf07cf318710f861f4a838b574a266d4c0daeb5775ff69e6bf822b862be754e46d0ded94abc4093c34f44b5a7b1280b",
+    "violations": [],
+    "context": "1a67ead9de93d0843b9b289a29389702:b33d900fa1cbc17f52518efa714db25e"
+  },
+  {
+    "_id": "1781876534833",
+    "timestamp": "2026-06-19T13:42:14.833Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "de9879b7296161493b215d39c7520eef:2f8d5249feb0c3d791fc53f1d34068625e52f95b7ca9363cd11e079bb456dec16dbe92258c061309c954a5aa7a2a46a5",
+    "violations": [],
+    "context": "d9e97e944e34590deb5db2a5f535c7f2:b699fca3f1d20b990aaf7bc10d8476c0"
+  },
+  {
+    "_id": "1781876534825",
+    "timestamp": "2026-06-19T13:42:14.826Z",
+    "userId": "bob_employee",
+    "role": "employee",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "4127fc20307db9996b8d3a181ca5984d:cbd2c7186104e88a5093d7417c08c7a1d52a8e59ec88f0dd10db3675a61ece53d6ba86f8d220164944b446f4fad7c350",
+    "violations": [],
+    "context": "df7d7560d3b38af918f019722cb95195:84fad440f2472909cd2e93dd3ccd3854"
+  },
+  {
+    "_id": "1781876509248",
+    "timestamp": "2026-06-19T13:41:49.248Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 32,
+    "decision": "Blocked (Credentials Mismatch)",
+    "explanation": "Access is cleared (Risk: 32/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": "28d0336097da77ee94c8fd0ff631a44a:df666a44b00bc50b6e0da882cb1c759a0b8db3594fac736d8edea687ff183beafdb503c9a10ef2808d3661a205a1ea2c",
+    "violations": [
+      {
+        "desc": "Multiple failed authentication attempts (2 tries)",
+        "weight": 10
+      }
+    ],
+    "context": "664ff73ce3e67e17fb19f1b56957e2f0:8c65000bb0106a47f30fc1682cbc2f51f92e05fb35d72e51f1286e74cdb9080e3aba152083b80f78a67d24554a245db74605346a752fed853e46bec3a9b3aebc6c5106f4da2992743c540aa0b316baf4ac4983ac77d24d7e9ba1bc21aa59535496ecbff73397899d3ad4755a35f48cd60b73b427ac6b6261daba5ba8d0c0e12332e2f44686272d8387a7b58cd1e9f7eb42d44e215b59993139831e71b9b86515232fda267ce3583546c12166c6cc9bf058fcf11fc6cee8ef34b47336ed0cdf30"
+  },
+  {
+    "_id": "1781863139854",
+    "timestamp": "2026-06-19T09:58:59.854Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 100,
+    "decision": "Blocked",
+    "explanation": "The session presents a moderate-to-high risk (100/100). This evaluation is driven by impossible travel speed between consecutive login locations, and an unrecognized hardware device profile. Due to critical threat indicators, the session has been terminated and the account is temporarily suspended pending Video-KYC verification.",
+    "telemetry": {
+      "cpm": 1200,
+      "flightTime": 5,
+      "scrollSpeed": 4500
+    },
+    "violations": [
+      {
+        "desc": "Impossible geographical travel velocity detected",
+        "weight": 60
+      },
+      {
+        "desc": "Device is rooted/jailbroken",
+        "weight": 50
+      },
+      {
+        "desc": "Browser canvas and hardware fingerprint unrecognized",
+        "weight": 20
+      }
+    ],
+    "context": {
+      "new_device_fingerprint": true,
+      "impossible_travel": true,
+      "rooted_jailbroken": true
+    }
+  },
+  {
+    "_id": "1781863046713",
+    "timestamp": "2026-06-19T09:57:26.713Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 44,
+    "decision": "Step-Up Required",
+    "explanation": "The session presents a moderate-to-high risk (44/100). This evaluation is driven by connection originating from a public VPN/Tor subnet, and an unrecognized hardware device profile. An adaptive security verification (FIDO2 passkey biometric or SMS OTP) has been requested to confirm identity.",
+    "telemetry": {
+      "cpm": 240,
+      "flightTime": 120,
+      "scrollSpeed": 420
+    },
+    "violations": [
+      {
+        "desc": "Browser canvas and hardware fingerprint unrecognized",
+        "weight": 20
+      },
+      {
+        "desc": "Connection established via known public VPN / Tor exit node",
+        "weight": 15
+      }
+    ],
+    "context": {
+      "new_device_fingerprint": true,
+      "vpn_tor_ip": true
+    }
+  },
+  {
+    "_id": "1781863039421",
+    "timestamp": "2026-06-19T09:57:19.421Z",
+    "userId": "bob_customer",
+    "role": "customer",
+    "riskScore": 9,
+    "decision": "Frictionless Access",
+    "explanation": "Access is cleared (Risk: 9/100). The user's typing pattern, device fingerprint, and network routing match historical baseline norms with negligible anomalies.",
+    "telemetry": {
+      "cpm": 240,
+      "flightTime": 120,
+      "scrollSpeed": 420
+    },
+    "violations": [],
+    "context": {}
+  }
+]

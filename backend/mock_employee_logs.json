@@ -1,0 +1,189 @@
+[
+  {
+    "_id": "emp_log_1781892680684",
+    "timestamp": "2026-06-19T18:11:20.684Z",
+    "employeeId": "EMP-2081",
+    "employeeName": "Priya Patel",
+    "branch": "Delhi CP",
+    "department": "Loans",
+    "action": "Queried VIP customer account",
+    "riskScore": 75,
+    "status": "Warning",
+    "details": {
+      "vipAccessed": true,
+      "ip": "::1"
+    }
+  },
+  {
+    "_id": "emp_log_1781892520134",
+    "timestamp": "2026-06-19T18:08:40.134Z",
+    "employeeId": "EMP-OYEE",
+    "employeeName": "bob_employee",
+    "branch": "Mumbai HQ",
+    "department": "Operations",
+    "action": "Bulk database export (500 records) attempted",
+    "riskScore": 100,
+    "status": "Suspended",
+    "details": {
+      "vipAccessed": true,
+      "bulkExport": true,
+      "ip": "::1"
+    }
+  },
+  {
+    "_id": "emp_log_1781892489047",
+    "timestamp": "2026-06-19T18:08:09.047Z",
+    "employeeId": "EMP-2081",
+    "employeeName": "Priya Patel",
+    "branch": "Mumbai HQ",
+    "department": "Operations",
+    "action": "Bulk database export (500 records) attempted",
+    "riskScore": 100,
+    "status": "Suspended",
+    "details": {
+      "vipAccessed": true,
+      "bulkExport": true,
+      "ip": "::1"
+    }
+  },
+  {
+    "_id": "emp_log_1781892431889",
+    "timestamp": "2026-06-19T18:07:11.889Z",
+    "employeeId": "EMP-OYEE",
+    "employeeName": "bob_employee",
+    "branch": "Mumbai, MH",
+    "department": "Operations",
+    "action": "Standard database search query",
+    "riskScore": 0,
+    "status": "Active",
+    "details": {
+      "device_name": "Chrome Browser",
+      "location_name": "Mumbai, MH",
+      "behavioral_normal": true
+    }
+  },
+  {
+    "_id": "emp_log_1781892193486",
+    "timestamp": "2026-06-19T18:03:13.486Z",
+    "employeeId": "EMP-2081",
+    "employeeName": "Priya Patel",
+    "branch": "Delhi CP",
+    "department": "Loans",
+    "action": "Queried VIP customer account",
+    "riskScore": 75,
+    "status": "Warning",
+    "details": {
+      "vipAccessed": true,
+      "ip": "::1"
+    }
+  },
+  {
+    "_id": "emp_log_1781892143581",
+    "timestamp": "2026-06-19T18:02:23.581Z",
+    "employeeId": "EMP-OYEE",
+    "employeeName": "bob_employee",
+    "branch": "Mumbai, MH",
+    "department": "Operations",
+    "action": "Standard database search query",
+    "riskScore": 0,
+    "status": "Active",
+    "details": {
+      "device_name": "Chrome Browser",
+      "location_name": "Mumbai, MH",
+      "behavioral_normal": true
+    }
+  },
+  {
+    "_id": "emp_log_1781890698267",
+    "timestamp": "2026-06-19T17:38:18.267Z",
+    "employeeId": "EMP-MOTE",
+    "employeeName": "remote",
+    "branch": "Mumbai, MH",
+    "department": "Operations",
+    "action": "Standard database search query",
+    "riskScore": 0,
+    "status": "Active",
+    "details": {
+      "device_name": "Chrome Browser",
+      "location_name": "Mumbai, MH",
+      "behavioral_normal": true
+    }
+  },
+  {
+    "_id": "emp_log_1781890428207",
+    "timestamp": "2026-06-19T17:33:48.207Z",
+    "employeeId": "EMP-MOTE",
+    "employeeName": "remote",
+    "branch": "Mumbai, MH",
+    "department": "Operations",
+    "action": "Standard database search query",
+    "riskScore": 0,
+    "status": "Active",
+    "details": {
+      "device_name": "Chrome Browser",
+      "location_name": "Mumbai, MH",
+      "behavioral_normal": true
+    }
+  },
+  {
+    "_id": "emp_log_1781890174727",
+    "timestamp": "2026-06-19T17:29:34.727Z",
+    "employeeId": "EMP-OYEE",
+    "employeeName": "bob_employee",
+    "branch": "Mumbai, MH",
+    "department": "Operations",
+    "action": "Standard database search query",
+    "riskScore": 0,
+    "status": "Active",
+    "details": {
+      "device_name": "Chrome Browser",
+      "location_name": "Mumbai, MH",
+      "behavioral_normal": true
+    }
+  },
+  {
+    "_id": "emp_log_101",
+    "timestamp": "2026-06-19T16:25:03.727Z",
+    "employeeId": "EMP-3099",
+    "employeeName": "Rajesh Verma",
+    "branch": "Ahmedabad HQ",
+    "department": "Operations",
+    "action": "Bulk database export (502 records) attempted",
+    "riskScore": 90,
+    "status": "Suspended",
+    "details": {
+      "recordCount": 502,
+      "ip": "192.168.10.45"
+    }
+  },
+  {
+    "_id": "emp_log_102",
+    "timestamp": "2026-06-19T15:25:03.727Z",
+    "employeeId": "EMP-2081",
+    "employeeName": "Priya Patel",
+    "branch": "Delhi Connaught Place",
+    "department": "Loans",
+    "action": "Queried VIP customer account (Amitabh B.)",
+    "riskScore": 65,
+    "status": "Warning",
+    "details": {
+      "recordName": "Amitabh B.",
+      "ip": "192.168.22.12"
+    }
+  },
+  {
+    "_id": "emp_log_103",
+    "timestamp": "2026-06-19T14:25:03.727Z",
+    "employeeId": "EMP-1042",
+    "employeeName": "Ramesh Sharma",
+    "branch": "Mumbai Main",
+    "department": "Retail Banking",
+    "action": "Standard customer lookup x 2 for loan eligibility check",
+    "riskScore": 12,
+    "status": "Active",
+    "details": {
+      "lookupCount": 2,
+      "ip": "192.168.1.115"
+    }
+  }
+]
