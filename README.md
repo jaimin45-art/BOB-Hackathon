@@ -78,7 +78,7 @@ Each scenario shows: **Problem → Detection → Risk Calculation → Decision �
 ```powershell
 cd backend
 npm install
-# Create backend/.env (see RUN_INSTRUCTIONS.md)
+Create backend/.env (see RUN_INSTRUCTIONS.md)
 npm run dev
 ```
 

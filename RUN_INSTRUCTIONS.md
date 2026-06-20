@@ -29,7 +29,8 @@ Open **3 terminal windows**:
 
 ### Terminal 1 — Python Risk Engine
 ```powershell
-cd C:\Users\modi jaimin\.gemini\antigravity\scratch\bob-trust-framework\python_engine
+cd bob-trust-framework
+cd python engine
 python -m venv venv
 .\venv\Scripts\activate
 pip install -r requirements.txt
@@ -39,7 +40,8 @@ Runs on **http://localhost:5001**
 
 ### Terminal 2 — Node.js Backend
 ```powershell
-cd C:\Users\modi jaimin\.gemini\antigravity\scratch\bob-trust-framework\backend
+cd bob-trust-framework
+cd backend
 npm install
 npm run dev
 ```
@@ -47,7 +49,8 @@ Runs on **http://localhost:5000**
 
 ### Terminal 3 — Next.js Frontend
 ```powershell
-cd C:\Users\modi jaimin\.gemini\antigravity\scratch\bob-trust-framework\frontend
+cd bob-trust-framework
+cd frontend
 npm install
 npm run dev
 ```

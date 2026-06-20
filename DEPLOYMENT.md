@@ -10,7 +10,7 @@ Best for hackathon judges and local presentation.
 
 ### Step 1 — Clone / Open Project
 ```powershell
-cd C:\Users\modi jaimin\.gemini\antigravity\scratch\bob-trust-framework
+cd bob-trust-framework
 ```
 
 ### Step 2 — Configure Environment
