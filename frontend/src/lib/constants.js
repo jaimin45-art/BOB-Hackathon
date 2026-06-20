@@ -3,7 +3,7 @@ export const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 export const PRODUCT = {
   name: 'BoB Identity Trust Platform',
   bank: 'Bank of Baroda',
-  tagline: 'Continuous Trust. Frictionless Banking.'
+  tagline: 'Identity access and risk management for banking operations.'
 };
 
 export const CHANNELS = [

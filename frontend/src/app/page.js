@@ -253,10 +253,10 @@ export default function App() {
             <h1>{PRODUCT.name}</h1>
             <p className="tagline">{PRODUCT.tagline}</p>
             <p className="subtitle">
-              A privacy-first, risk-based identity trust framework that continuously validates customer and enterprise identities across all banking channels — triggering verification only when risk increases.
+              Identity verification, channel risk analysis, and case management for secure banking operations.
             </p>
             <div className="landing-modules">
-              {['Identity Trust Engine', 'Device Intelligence', 'Behavioral Analytics', 'Fraud Detection', 'Insider Threat Engine', 'Case Management', 'Explainable AI', 'Verification Orchestrator', 'Audit & Compliance'].map(m => (
+              {['Identity Validation', 'Device Risk', 'Behavioral Signals', 'Fraud Screening', 'Case Review', 'Regulatory Reporting'].map(m => (
                 <div key={m} className="module-pill">{m}</div>
               ))}
             </div>
@@ -300,12 +300,12 @@ export default function App() {
                   )}
                   <button className="btn btn-primary" type="submit" disabled={loading}>
                     {loading ? <RefreshCw size={14} className="spin" /> : <ShieldCheck size={14} />}
-                    {authTab === 'login' ? 'Sign In Securely' : 'Create Account'}
+                    {authTab === 'login' ? 'Sign In' : 'Register'}
                   </button>
                 </form>
 
                 <div className="auth-hint">
-                  <div className="hint-title">Demo Credentials</div>
+                  <div className="hint-title">Demo Access</div>
                   <div className="hint-grid">
                     <span>Customer:</span><strong>bob_customer / customer123</strong>
                     <span>Fraud Ops:</span><strong>bob_employee / employee123</strong>
@@ -334,7 +334,7 @@ export default function App() {
                     <button className="btn btn-primary" style={{ flex: 1 }} onClick={() => verifyStepUp(otp === '123456')}>Verify OTP</button>
                     <button className="btn btn-outline" onClick={() => setStepUp(null)}>Cancel</button>
                   </div>
-                  <p className="text-xs text-gray mt-8">Demo OTP: <strong>123456</strong></p>
+                  <p className="text-xs text-gray mt-8">Test OTP: <strong>123456</strong></p>
                 </>
               ) : (
                 <div className="flex-center gap-8">
@@ -519,7 +519,7 @@ export default function App() {
             <div className="judge-banner">
               <Info size={18} style={{ flexShrink: 0 }} />
               <div>
-                <strong>For Judges (3-min demo):</strong> Go to <em>Customer Trust</em> → run any of the 5 demo scenarios. Each shows Problem → Detection → Risk Calculation → Decision → Outcome with live API results.
+                <strong>Scenario simulation:</strong> Go to <em>Customer Trust</em> and run a sample scenario to review the trust assessment and decision rationale.
               </div>
             </div>
 
@@ -535,8 +535,9 @@ export default function App() {
             </div>
 
             <div className="ops-card mb-16">
-              <div className="card-header">Multi-Channel Trust Engine — Same Identity, All Channels</div>
+              <div className="card-header">Channel trust overview</div>
               <div className="card-body">
+                <p style={{ fontSize: 13, color: 'var(--gray-600)', marginBottom: 12 }}>Consistent identity assessment for internet banking, mobile, ATM, employee access and support channels.</p>
                 <div className="channel-grid">
                   {CHANNELS.map(ch => {
                     const Icon = ICON_MAP[ch.icon] || Globe;
@@ -553,7 +554,7 @@ export default function App() {
             </div>
 
             <div className="ops-card mb-16">
-              <div className="card-header">How Continuous Trust Works</div>
+              <div className="card-header">How trust decisions are made</div>
               <div className="card-body">
                 <div className="arch-flow">
                   {[
@@ -612,15 +613,15 @@ export default function App() {
           </>)}
 
           {tab === 'customer_trust' && (<>
-            <div className="judge-banner"><Info size={18} style={{ flexShrink: 0 }} /><div><strong>Demo Scenarios:</strong> Click any scenario below to run a live trust evaluation. Results show trust score, contributing factors, and the system decision.</div></div>
+            <div className="judge-banner"><Info size={18} style={{ flexShrink: 0 }} /><div><strong>Scenario evaluation:</strong> Select a representative event to review the decision outcome, risk assessment, and supporting signals.</div></div>
             <div className="grid-2-wide">
               <div>
-                <h3 className="text-sm text-bold mb-12" style={{ color: '#e2e8f0' }}>Select a Demo Scenario</h3>
+                <h3 className="text-sm text-bold mb-12" style={{ color: 'var(--text-default)' }}>Choose a scenario</h3>
                 {SCENARIOS.map(s => (
-                  <div key={s.id} className={`scenario-card ${selScenario?.id === s.id ? 'active' : ''}`} style={{ background: 'var(--navy-800)', borderColor: selScenario?.id === s.id ? 'var(--orange-500)' : 'var(--navy-700)' }}>
-                    <div className="flex-between"><h4 style={{ color: '#e2e8f0' }}>{s.title}</h4><span className={`badge ${s.badgeClass}`}>{s.badge}</span></div>
-                    <p style={{ color: '#94a3b8' }}>{s.desc}</p>
-                    <p className="text-xxs" style={{ color: '#64748b', marginBottom: 8 }}>Expected: Trust {s.expectedTrust} → {s.expectedDecision}</p>
+                  <div key={s.id} className={`scenario-card ${selScenario?.id === s.id ? 'active' : ''}`} style={{ borderColor: selScenario?.id === s.id ? 'var(--accent-500)' : 'var(--gray-200)' }}>
+                    <div className="flex-between"><h4 style={{ color: 'var(--text-default)' }}>{s.title}</h4><span className={`badge ${s.badgeClass}`}>{s.badge}</span></div>
+                    <p style={{ color: 'var(--text-muted)' }}>{s.desc}</p>
+                    <p className="text-xxs" style={{ color: 'var(--text-muted)', marginBottom: 8 }}>Expected: Trust {s.expectedTrust} → {s.expectedDecision}</p>
                     <button className="btn btn-primary btn-sm" style={{ width: 'auto' }} disabled={scenarioLoading} onClick={() => runScenario(s)}>
                       {scenarioLoading && selScenario?.id === s.id ? 'Evaluating...' : 'Run Scenario'}
                     </button>
@@ -631,13 +632,13 @@ export default function App() {
                 {!scenarioResult && !scenarioLoading ? (
                   <div className="ops-card"><div className="card-body text-center" style={{ padding: 48 }}><Shield size={32} color="#475569" /><p className="text-sm mt-12" style={{ color: '#64748b' }}>Select a scenario to see the full trust evaluation flow.</p></div></div>
                 ) : scenarioLoading ? (
-                  <div className="ops-card"><div className="card-body text-center" style={{ padding: 48 }}><RefreshCw size={24} className="spin" style={{ color: '#64748b' }} /><p className="text-sm mt-12" style={{ color: '#64748b' }}>Running trust evaluation...</p></div></div>
+                  <div className="ops-card"><div className="card-body text-center" style={{ padding: 48 }}><RefreshCw size={24} className="spin" style={{ color: '#64748b' }} /><p className="text-sm mt-12" style={{ color: '#64748b' }}>Running evaluation...</p></div></div>
                 ) : (
                   <div className="ops-card">
                     <div className="card-header">Trust Evaluation Result</div>
                     <div className="card-body">
                       <div className="flex-center mb-16" style={{ gap: 20 }}>
-                        <div className="text-center" style={{ padding: '16px 20px', border: '1px solid var(--navy-700)', borderRadius: 8, minWidth: 100 }}>
+                        <div className="text-center" style={{ padding: '16px 20px', border: '1px solid var(--gray-200)', borderRadius: 8, minWidth: 100 }}>
                           <div style={{ fontSize: 36, fontWeight: 700, color: riskLevel(scenarioResult.riskScore).color }}>{scenarioResult.trustScore}</div>
                           <div className="text-xxs" style={{ color: '#64748b' }}>Trust Score</div>
                         </div>
@@ -681,7 +682,7 @@ export default function App() {
                       {scenarioResult.explanation && (
                         <div className="info-box blue mt-12" style={{ background: 'rgba(59,130,246,0.1)', borderColor: 'rgba(59,130,246,0.3)', color: '#93c5fd' }}>
                           <Info size={14} style={{ flexShrink: 0 }} />
-                          <div className="text-xs"><strong>Explainable AI:</strong> {scenarioResult.explanation}</div>
+                          <div className="text-xs"><strong>Decision rationale:</strong> {scenarioResult.explanation}</div>
                         </div>
                       )}
                     </div>
@@ -692,19 +693,19 @@ export default function App() {
           </>)}
 
           {tab === 'risk_center' && (<>
-            <div className="judge-banner"><Info size={18} style={{ flexShrink: 0 }} /><div><strong>Risk Center:</strong> Real-time audit log of every identity evaluation. Click any entry to see the full risk breakdown and AI explanation.</div></div>
+            <div className="judge-banner"><Info size={18} style={{ flexShrink: 0 }} /><div><strong>Risk Center:</strong> Live event stream for identity decisions. Select an entry to inspect scores, context and outcomes.</div></div>
             <div className="grid-2-wide">
               <div className="scroll-y" style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                 {logs.map((l, i) => (
                   <div key={l._id || i} className={`ops-list-item ${selLog?._id === l._id ? 'selected' : ''}`} onClick={() => setSelLog(l)}>
                     <div className="flex-between mb-12">
-                      <span className="flex-center"><span className={`dot ${riskLevel(l.riskScore).dotClass}`} /><strong className="text-sm" style={{ color: '#e2e8f0' }}>{l.userId}</strong></span>
+                      <span className="flex-center"><span className={`dot ${riskLevel(l.riskScore).dotClass}`} /><strong className="text-sm" style={{ color: 'var(--text-default)' }}>{l.userId}</strong></span>
                       <strong className="text-sm" style={{ color: riskLevel(l.riskScore).color }}>Risk {l.riskScore}</strong>
                     </div>
-                    <p className="text-xs" style={{ color: '#64748b', lineHeight: 1.4 }}>{l.decision} — {l.explanation?.substring(0, 100)}...</p>
+                    <p className="text-xs" style={{ lineHeight: 1.5 }}>{l.decision} — {l.explanation?.substring(0, 100)}...</p>
                   </div>
                 ))}
-                {logs.length === 0 && <p className="text-xs text-center" style={{ color: '#64748b' }}>No evaluations yet. Run a demo scenario.</p>}
+                {logs.length === 0 && <p className="text-xs text-center" style={{ color: 'var(--text-muted)' }}>No evaluations yet. Choose a scenario to begin.</p>}
               </div>
               <div>
                 {selLog ? (
@@ -719,7 +720,7 @@ export default function App() {
                         ['Time', new Date(selLog.timestamp).toLocaleString('en-IN')]
                       ].map(([k, v]) => (
                         <div key={k} className="flex-between text-sm" style={{ padding: '8px 0', borderBottom: '1px solid var(--navy-800)' }}>
-                          <span style={{ color: '#64748b' }}>{k}</span><strong style={{ color: '#e2e8f0' }}>{v}</strong>
+                          <span style={{ color: 'var(--text-muted)' }}>{k}</span><strong style={{ color: 'var(--text-default)' }}>{v}</strong>
                         </div>
                       ))}
                       {selLog.violations?.map((v, i) => (
@@ -728,11 +729,11 @@ export default function App() {
                           <span className={`factor-impact ${v.weight > 0 ? 'positive' : 'negative'}`}>{v.weight > 0 ? `+${v.weight}` : v.weight}</span>
                         </div>
                       ))}
-                      {selLog.explanation && <div className="info-box blue mt-12" style={{ background: 'rgba(59,130,246,0.1)', borderColor: 'rgba(59,130,246,0.3)', color: '#93c5fd' }}><Info size={14} /><div className="text-xs">{selLog.explanation}</div></div>}
+                      {selLog.explanation && <div className="info-box blue mt-12" style={{ background: 'rgba(59,130,246,0.1)', borderColor: 'rgba(59,130,246,0.3)', color: '#1e40af' }}><Info size={14} /><div className="text-xs">{selLog.explanation}</div></div>}
                     </div>
                   </div>
                 ) : (
-                  <div className="ops-card"><div className="card-body text-center" style={{ padding: 40, color: '#64748b' }}>Select a log entry to review</div></div>
+                  <div className="ops-card"><div className="card-body text-center" style={{ padding: 40, color: 'var(--text-muted)' }}>Select a log entry to review</div></div>
                 )}
               </div>
             </div>
@@ -818,7 +819,7 @@ export default function App() {
                 </div>
               </div>
               <div className="ops-card">
-                <div className="card-header">Log Employee Activity (Demo)</div>
+                <div className="card-header">Log Employee Activity</div>
                 <div className="card-body">
                   <form onSubmit={submitEmployeeActivity} style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
                     <div className="form-group"><label className="form-label" style={{ color: '#94a3b8' }}>Employee Name</label><input className="form-input" style={{ background: 'var(--navy-800)', borderColor: 'var(--navy-700)', color: '#e2e8f0' }} value={empName} onChange={e => setEmpName(e.target.value)} required /></div>

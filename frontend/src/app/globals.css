@@ -26,33 +26,43 @@
   --navy-600: #1e4070;
   --navy-500: #2563a8;
 
-  --orange-500: #f26522;
-  --orange-600: #d95a1e;
-  --orange-400: #ff8547;
-  --orange-50: #fff7ed;
-  --orange-100: #ffedd5;
+  --accent-500: #2563eb;
+  --accent-600: #1d4ed8;
+  --accent-400: #3b82f6;
+  --accent-50: #eff6ff;
 
-  --green-500: #22c55e;
-  --green-400: #4ade80;
-  --green-50: #f0fdf4;
+  --orange-500: #d97706;
+  --orange-600: #b45309;
+  --orange-400: #f59e0b;
+  --orange-50: #fffbeb;
+  --orange-100: #fef3c7;
+
+  --green-500: #16a34a;
+  --green-400: #22c55e;
+  --green-50: #ecfdf5;
   --green-700: #15803d;
 
-  --red-500: #ef4444;
+  --red-500: #dc2626;
   --red-400: #f87171;
   --red-50: #fef2f2;
   --red-700: #b91c1c;
 
-  --yellow-500: #eab308;
-  --yellow-400: #facc15;
-  --yellow-50: #fefce8;
-  --yellow-700: #a16207;
+  --yellow-500: #ca8a04;
+  --yellow-400: #fbbf24;
+  --yellow-50: #fef3c7;
+  --yellow-700: #92400e;
 
-  --blue-500: #3b82f6;
-  --blue-400: #60a5fa;
+  --blue-500: #1d4ed8;
+  --blue-400: #3b82f6;
   --blue-50: #eff6ff;
-  --blue-700: #1d4ed8;
+  --blue-700: #1e40af;
 
-  --purple-500: #8b5cf6;
+  --purple-500: #7c3aed;
+  --surface: #ffffff;
+  --background: #f8fafc;
+  --surface-alt: #f1f5f9;
+  --text-default: #0f172a;
+  --text-muted: #475569;
 
   --radius: 8px;
   --shadow: 0 1px 3px rgba(0,0,0,0.08);
@@ -68,8 +78,8 @@
 
 body {
   font-family: 'Inter', -apple-system, sans-serif;
-  background: var(--gray-50);
-  color: var(--gray-800);
+  background: var(--background);
+  color: var(--text-default);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -712,27 +722,28 @@ body {
 
 .auth-hint {
   margin-top: 16px;
-  padding: 10px;
-  background: var(--orange-50);
-  border: 1px solid var(--orange-100);
-  border-radius: 6px;
+  padding: 12px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
   font-size: 11px;
+  color: var(--gray-700);
 }
 
 .auth-hint .hint-title {
   font-weight: 700;
-  color: var(--orange-500);
-  margin-bottom: 4px;
-  font-size: 10px;
+  color: var(--gray-900);
+  margin-bottom: 6px;
+  font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
 }
 
 .auth-hint .hint-grid {
   display: grid;
   grid-template-columns: 70px 1fr;
-  gap: 2px 8px;
-  color: var(--gray-600);
+  gap: 2px 10px;
+  color: var(--gray-700);
 }
 
 /* --- Customer Portal --- */
@@ -1004,15 +1015,15 @@ body {
 /* --- Enterprise Ops Dashboard (Dark Navy Theme) --- */
 .ops-layout {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
-  background: var(--navy-950);
+  background: var(--background);
 }
 
 .ops-sidebar {
   width: 240px;
-  background: var(--navy-900);
-  border-right: 1px solid var(--navy-700);
+  background: var(--surface);
+  border-right: 1px solid var(--gray-200);
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -1020,37 +1031,37 @@ body {
 
 .ops-sidebar .sidebar-logo {
   padding: 20px 16px;
-  border-bottom: 1px solid var(--navy-700);
+  border-bottom: 1px solid var(--gray-200);
 }
 
 .ops-sidebar .sidebar-logo h2 {
-  color: var(--white);
+  color: var(--text-default);
   font-size: 15px;
 }
 
 .ops-sidebar .sidebar-logo p {
-  color: var(--orange-400);
+  color: var(--accent-600);
   font-size: 10px;
 }
 
 .ops-sidebar .nav-btn {
-  color: #94a3b8;
+  color: var(--text-muted);
 }
 
 .ops-sidebar .nav-btn:hover {
-  background: var(--navy-800);
-  color: var(--white);
+  background: var(--surface-alt);
+  color: var(--text-default);
 }
 
 .ops-sidebar .nav-btn.active {
-  background: var(--navy-700);
-  color: var(--orange-400);
-  border-left: 3px solid var(--orange-500);
+  background: var(--accent-50);
+  color: var(--accent-600);
+  border-left: 3px solid var(--accent-500);
 }
 
 .ops-sidebar .sidebar-footer {
-  border-top: 1px solid var(--navy-700);
-  color: #94a3b8;
+  border-top: 1px solid var(--gray-200);
+  color: var(--text-muted);
 }
 
 .ops-main {
@@ -1058,13 +1069,13 @@ body {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  background: var(--navy-950);
+  background: var(--background);
 }
 
 .ops-topbar {
   padding: 16px 28px;
-  background: var(--navy-900);
-  border-bottom: 1px solid var(--navy-700);
+  background: var(--surface);
+  border-bottom: 1px solid var(--gray-200);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1076,12 +1087,12 @@ body {
 .ops-topbar h2 {
   font-size: 18px;
   font-weight: 700;
-  color: var(--white);
+  color: var(--text-default);
 }
 
 .ops-topbar p {
   font-size: 12px;
-  color: #64748b;
+  color: var(--text-muted);
   margin-top: 2px;
 }
 
@@ -1090,28 +1101,28 @@ body {
 }
 
 .ops-card {
-  background: var(--navy-900);
-  border: 1px solid var(--navy-700);
+  background: var(--surface);
+  border: 1px solid var(--gray-200);
   border-radius: var(--radius);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow);
 }
 
 .ops-card .card-header {
   padding: 14px 18px;
-  border-bottom: 1px solid var(--navy-700);
+  border-bottom: 1px solid var(--gray-200);
   font-size: 13px;
   font-weight: 600;
-  color: #e2e8f0;
+  color: var(--text-default);
 }
 
 .ops-card .card-body {
   padding: 18px;
-  color: #cbd5e1;
+  color: var(--text-muted);
 }
 
 .ops-stat {
-  background: linear-gradient(135deg, var(--navy-800) 0%, var(--navy-900) 100%);
-  border: 1px solid var(--navy-700);
+  background: var(--surface);
+  border: 1px solid var(--gray-200);
   border-radius: var(--radius);
   padding: 20px;
 }
@@ -1119,13 +1130,13 @@ body {
 .ops-stat .stat-value {
   font-size: 32px;
   font-weight: 700;
-  color: var(--white);
+  color: var(--text-default);
   line-height: 1;
 }
 
 .ops-stat .stat-label {
   font-size: 12px;
-  color: #94a3b8;
+  color: var(--text-muted);
   margin-top: 6px;
 }
 
@@ -1149,40 +1160,40 @@ body {
 
 .channel-card {
   padding: 16px;
-  background: var(--navy-800);
-  border: 1px solid var(--navy-700);
+  background: var(--surface);
+  border: 1px solid var(--gray-200);
   border-radius: var(--radius);
   text-align: center;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, background 0.2s;
 }
 
 .channel-card.active {
-  border-color: var(--orange-500);
-  background: rgba(242, 101, 34, 0.08);
+  border-color: var(--accent-600);
+  background: var(--surface-alt);
 }
 
 .channel-card .channel-icon {
   width: 36px;
   height: 36px;
   margin: 0 auto 8px;
-  background: var(--navy-700);
+  background: var(--accent-600);
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--orange-400);
+  color: white;
 }
 
 .channel-card .channel-name {
-  font-size: 11px;
-  font-weight: 600;
-  color: #e2e8f0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-default);
 }
 
 .channel-card .channel-status {
-  font-size: 10px;
-  color: var(--green-400);
-  margin-top: 4px;
+  font-size: 11px;
+  color: var(--green-700);
+  margin-top: 6px;
 }
 
 .ops-table {
@@ -1210,20 +1221,29 @@ body {
 
 .ops-list-item {
   padding: 14px 16px;
-  border: 1px solid var(--navy-700);
+  border: 1px solid var(--gray-200);
   border-radius: var(--radius);
   cursor: pointer;
-  background: var(--navy-800);
+  background: var(--surface);
   transition: all 0.15s;
 }
 
+.ops-list-item strong.text-sm {
+  color: var(--text-default);
+}
+
+.ops-list-item p {
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
 .ops-list-item:hover {
-  border-color: var(--navy-600);
+  border-color: var(--gray-300);
 }
 
 .ops-list-item.selected {
-  border-color: var(--orange-500);
-  background: rgba(242, 101, 34, 0.06);
+  border-color: var(--accent-500);
+  background: var(--accent-50);
 }
 
 .factor-row {
@@ -1248,7 +1268,7 @@ body {
 
 .landing-page {
   min-height: 100vh;
-  background: linear-gradient(160deg, var(--navy-950) 0%, var(--navy-900) 50%, #1a1040 100%);
+  background: var(--background);
   display: flex;
   flex-direction: column;
 }
@@ -1263,53 +1283,62 @@ body {
   flex-wrap: wrap;
 }
 
+.landing-brand {
+  max-width: 520px;
+  padding: 32px;
+  background: var(--surface);
+  border: 1px solid var(--gray-200);
+  border-radius: 20px;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.06);
+}
+
 .landing-brand h1 {
   font-size: 36px;
   font-weight: 700;
-  color: var(--white);
+  color: var(--gray-900);
   margin-bottom: 8px;
 }
 
 .landing-brand .tagline {
-  font-size: 16px;
-  color: var(--orange-400);
-  font-weight: 500;
+  font-size: 18px;
+  color: var(--gray-900);
+  font-weight: 600;
   margin-bottom: 16px;
 }
 
 .landing-brand .subtitle {
   font-size: 14px;
-  color: #94a3b8;
+  color: var(--gray-600);
   max-width: 480px;
   line-height: 1.7;
 }
 
 .landing-modules {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
   margin-top: 24px;
   max-width: 520px;
 }
 
 .module-pill {
-  padding: 8px 12px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid var(--navy-700);
-  border-radius: 6px;
-  font-size: 11px;
-  color: #94a3b8;
+  padding: 10px 14px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  font-size: 12px;
+  color: var(--gray-700);
   text-align: center;
 }
 
 .judge-banner {
-  background: rgba(242, 101, 34, 0.12);
-  border: 1px solid rgba(242, 101, 34, 0.3);
+  background: var(--surface-alt);
+  border: 1px solid var(--gray-200);
   border-radius: var(--radius);
   padding: 14px 18px;
   margin-bottom: 20px;
   font-size: 13px;
-  color: #fdba74;
+  color: var(--gray-800);
   display: flex;
   gap: 12px;
   align-items: flex-start;
