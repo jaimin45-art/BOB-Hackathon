@@ -1,4 +1,4 @@
-export const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+export const API = process.env.NEXT_PUBLIC_API_URL || 'https://bob-hackathon-production.up.railway.app';
 
 export const PRODUCT = {
   name: 'BoB Identity Trust Platform',
